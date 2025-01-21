@@ -22,8 +22,9 @@ public class BoildMovement : MonoBehaviour
     {
         var boidsInRange = BoidsInRange();
         Vector2 velocity = (Vector2)transform.forward 
-                            + Separation(boidsInRange).normalized 
-                            + Aligment(boidsInRange).normalized
+                            + 1.7f * Separation(boidsInRange).normalized  // tăng Separation lên 70%
+                            + 0.9f * Aligment(boidsInRange).normalized // giảm Aligment đi 90%
+                            + Cohesion(boidsInRange).normalized
                             * forwardSpeed;
         return velocity;
     }
@@ -82,6 +83,19 @@ public class BoildMovement : MonoBehaviour
         if (boildMovements.Count != 0) direction /= boildMovements.Count;
         else direction = Velocity;
 
+        return direction.normalized;
+    }
+
+    private Vector2 Cohesion(List<BoildMovement> boildMovements)
+    {
+        Vector2 direction;
+        Vector2 center = Vector2.zero;
+        foreach (var boid in boildMovements) center += (Vector2)boid.transform.position;
+
+        if (boildMovements.Count != 0) center /= boildMovements.Count;
+        else center = Velocity;
+
+        direction = center - (Vector2)transform.position;
         return direction.normalized;
     }
 }
