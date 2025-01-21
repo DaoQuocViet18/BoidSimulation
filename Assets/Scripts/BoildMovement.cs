@@ -21,7 +21,10 @@ public class BoildMovement : MonoBehaviour
     private Vector3 CaculateVelocity()
     {
         var boidsInRange = BoidsInRange();
-        Vector2 velocity = (Vector2)transform.forward + Separation(boidsInRange).normalized * forwardSpeed;
+        Vector2 velocity = (Vector2)transform.forward 
+                            + Separation(boidsInRange).normalized 
+                            + Aligment(boidsInRange).normalized
+                            * forwardSpeed;
         return velocity;
     }
 
@@ -71,4 +74,14 @@ public class BoildMovement : MonoBehaviour
         return dirtection.normalized;
     } 
         
+    private Vector2 Aligment(List<BoildMovement> boildMovements)
+    {
+        Vector2 direction = Vector2.zero;
+        foreach (var boid in boildMovements) direction += (Vector2)boid.Velocity;
+
+        if (boildMovements.Count != 0) direction /= boildMovements.Count;
+        else direction = Velocity;
+
+        return direction.normalized;
+    }
 }
