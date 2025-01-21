@@ -340,11 +340,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &647041551 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8727828931933090286, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
-  m_PrefabInstance: {fileID: 670317741833693139}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1773418425
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,9 +385,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boids: {fileID: 11400000, guid: 67829a986a8675043989127a50a0624e, type: 2}
-  boidPrefab: {fileID: 647041551}
+  boidPrefab: {fileID: 243410720471071564, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
   boidCount: 20
---- !u!1001 &670317741833693139
+--- !u!1001 &1288898741622883815
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -400,49 +395,53 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1009782735936150304, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
+    - target: {fileID: 243410720471071564, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
+      propertyPath: m_Name
+      value: Fish
+      objectReference: {fileID: 0}
+    - target: {fileID: 243410720471071564, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3561772634971853024, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1009782735936150304, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
+    - target: {fileID: 3561772634971853024, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1009782735936150304, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
+    - target: {fileID: 3561772634971853024, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1009782735936150304, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
+    - target: {fileID: 3561772634971853024, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 1009782735936150304, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
+    - target: {fileID: 3561772634971853024, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1009782735936150304, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
+    - target: {fileID: 3561772634971853024, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 1009782735936150304, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
+    - target: {fileID: 3561772634971853024, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1009782735936150304, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
+    - target: {fileID: 3561772634971853024, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1009782735936150304, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
+    - target: {fileID: 3561772634971853024, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 1009782735936150304, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
+    - target: {fileID: 3561772634971853024, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8727828931933090286, guid: c76c93eb5ae710d48a15372b325e2288, type: 3}
-      propertyPath: m_Name
-      value: Fish
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -455,5 +454,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
-  - {fileID: 670317741833693139}
+  - {fileID: 1288898741622883815}
   - {fileID: 1773418426}
