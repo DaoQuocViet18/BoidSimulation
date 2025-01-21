@@ -1,0 +1,1606 @@
+fileFormatVersion: 2
+guid: 8c9abde8774a1364e9a31a8d4c34cfa4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4567610412763174110
+    second: nimpass_0
+  - first:
+      213: -7454457046173649826
+    second: nimpass_1
+  - first:
+      213: 6016644067235924793
+    second: nimpass_2
+  - first:
+      213: -4538083246640160686
+    second: nimpass_3
+  - first:
+      213: -8216440976066112749
+    second: nimpass_4
+  - first:
+      213: 1762460516677231743
+    second: nimpass_5
+  - first:
+      213: 5388702460947975371
+    second: nimpass_6
+  - first:
+      213: -8624790220167514330
+    second: nimpass_7
+  - first:
+      213: 8513730149701825121
+    second: nimpass_8
+  - first:
+      213: -8117614571631702035
+    second: nimpass_9
+  - first:
+      213: -8596692219547324974
+    second: nimpass_10
+  - first:
+      213: -679058124993207485
+    second: nimpass_11
+  - first:
+      213: 7950994660836874142
+    second: nimpass_12
+  - first:
+      213: -7800469923833164732
+    second: nimpass_13
+  - first:
+      213: 7930661790037847215
+    second: nimpass_14
+  - first:
+      213: -690309278277886905
+    second: nimpass_15
+  - first:
+      213: 6811892838910148527
+    second: nimpass_16
+  - first:
+      213: 5219017031944536788
+    second: nimpass_17
+  - first:
+      213: 479070580374565049
+    second: nimpass_18
+  - first:
+      213: -4597013497463703414
+    second: nimpass_19
+  - first:
+      213: -8462708415024110944
+    second: nimpass_20
+  - first:
+      213: -1588175690409333762
+    second: nimpass_21
+  - first:
+      213: -4101600144340531365
+    second: nimpass_22
+  - first:
+      213: -499307413701491541
+    second: nimpass_23
+  - first:
+      213: -1822392171068588628
+    second: nimpass_24
+  - first:
+      213: -1656336999453083783
+    second: nimpass_25
+  - first:
+      213: 5833377818273118495
+    second: nimpass_26
+  - first:
+      213: -1422703063042935639
+    second: nimpass_27
+  - first:
+      213: -1586891115046829905
+    second: nimpass_28
+  - first:
+      213: -2245919589463173912
+    second: nimpass_29
+  - first:
+      213: 1139283951222549174
+    second: nimpass_30
+  - first:
+      213: -4012099772798741394
+    second: nimpass_31
+  - first:
+      213: -2994009456850573291
+    second: nimpass_32
+  - first:
+      213: -5183577915204403461
+    second: nimpass_33
+  - first:
+      213: 7689832077912751416
+    second: nimpass_34
+  - first:
+      213: -4822936005006400046
+    second: nimpass_35
+  - first:
+      213: 1239252015168060162
+    second: nimpass_36
+  - first:
+      213: 4173147769557483141
+    second: nimpass_37
+  - first:
+      213: -7193019371580335369
+    second: nimpass_38
+  - first:
+      213: -2245693482719444629
+    second: nimpass_39
+  - first:
+      213: -827513250989701402
+    second: nimpass_40
+  - first:
+      213: -1335555160686310679
+    second: nimpass_41
+  - first:
+      213: -7290575106977924717
+    second: nimpass_42
+  - first:
+      213: -3677248060405681307
+    second: nimpass_43
+  - first:
+      213: 4506884737116741294
+    second: nimpass_44
+  - first:
+      213: -1386550090803430564
+    second: nimpass_45
+  - first:
+      213: -5709934388637362136
+    second: nimpass_46
+  - first:
+      213: 6175271702330957496
+    second: nimpass_47
+  - first:
+      213: -7695019053884020966
+    second: nimpass_48
+  - first:
+      213: -5661512993588555054
+    second: nimpass_49
+  - first:
+      213: 1613969169332038049
+    second: nimpass_50
+  - first:
+      213: 6156294349429188054
+    second: nimpass_51
+  - first:
+      213: 1747003094459631951
+    second: nimpass_52
+  - first:
+      213: 1431782116411316484
+    second: nimpass_53
+  - first:
+      213: 5298229104295535375
+    second: nimpass_54
+  - first:
+      213: -3445181052974633723
+    second: nimpass_55
+  - first:
+      213: -8070882500826658165
+    second: nimpass_56
+  - first:
+      213: 8578595006032726631
+    second: nimpass_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: nimpass_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1394
+        width: 152
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b20e2a7869c90c0800000000000000
+      internalID: -4567610412763174110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_1
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1387
+        width: 157
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e547969dfc27c8890800000000000000
+      internalID: -7454457046173649826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_2
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1466
+        width: 23
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b0f8fc6e96f7350800000000000000
+      internalID: 6016644067235924793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_3
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1459
+        width: 39
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250acdab45d7501c0800000000000000
+      internalID: -4538083246640160686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_4
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1453
+        width: 70
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3139d9ff67659fd80800000000000000
+      internalID: -8216440976066112749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_5
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 1447
+        width: 146
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74a2338084857810800000000000000
+      internalID: 1762460516677231743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_6
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 1459
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bccc311765488ca40800000000000000
+      internalID: 5388702460947975371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_7
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 1453
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 627f6a8adf69e4880800000000000000
+      internalID: -8624790220167514330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_8
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1381
+        width: 159
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 162b286a678d62670800000000000000
+      internalID: 8513730149701825121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_9
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 1375
+        width: 174
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def8b5a5e80785f80800000000000000
+      internalID: -8117614571631702035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_10
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 1369
+        width: 176
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd648a39f962b880800000000000000
+      internalID: -8596692219547324974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_11
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1284
+        width: 176
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 343efedab308396f0800000000000000
+      internalID: -679058124993207485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_12
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1278
+        width: 176
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e979532948b975e60800000000000000
+      internalID: 7950994660836874142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_13
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1272
+        width: 176
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c4ec4dee92fb390800000000000000
+      internalID: -7800469923833164732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_14
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 1266
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac28fc21ee5f0e60800000000000000
+      internalID: 7930661790037847215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_15
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 1259
+        width: 176
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74c171b6e578b66f0800000000000000
+      internalID: -690309278277886905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1144
+        width: 176
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faf344f2274b88e50800000000000000
+      internalID: 6811892838910148527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_17
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1138
+        width: 175
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d284c9c65cad6840800000000000000
+      internalID: 5219017031944536788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_18
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1131
+        width: 175
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0f095972006a600800000000000000
+      internalID: 479070580374565049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_19
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1125
+        width: 175
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a88ffff74902430c0800000000000000
+      internalID: -4597013497463703414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_20
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1123
+        width: 175
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a267cca88b6e8a80800000000000000
+      internalID: -8462708415024110944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_21
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 987
+        width: 175
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efbad34cf9aa5f9e0800000000000000
+      internalID: -1588175690409333762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_22
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 987
+        width: 175
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5744e166603417c0800000000000000
+      internalID: -4101600144340531365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_23
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 994
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba48a9c7d8a1219f0800000000000000
+      internalID: -499307413701491541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_24
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 994
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cadf002d9ff85b6e0800000000000000
+      internalID: -1822392171068588628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_25
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 994
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 977334f46428309e0800000000000000
+      internalID: -1656336999453083783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_26
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 858
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19ffca183254f050800000000000000
+      internalID: 5833377818273118495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_27
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 858
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4377a1a1b814ce0800000000000000
+      internalID: -1422703063042935639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_28
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 861
+        width: 176
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa0096640fa3af9e0800000000000000
+      internalID: -1586891115046829905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_29
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 861
+        width: 176
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4d4f36804e4d0e0800000000000000
+      internalID: -2245919589463173912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_30
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 861
+        width: 176
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba6ceaa7bc8fcf00800000000000000
+      internalID: 1139283951222549174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_31
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 732
+        width: 176
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64d7ee73882258c0800000000000000
+      internalID: -4012099772798741394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_32
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 732
+        width: 176
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 518e24e03442376d0800000000000000
+      internalID: -2994009456850573291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_33
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 729
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe7ea2995b3018b0800000000000000
+      internalID: -5183577915204403461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_34
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 729
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83db46a4885c7ba60800000000000000
+      internalID: 7689832077912751416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_35
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 729
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5e627a14d711db0800000000000000
+      internalID: -4822936005006400046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_36
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 600
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20b77475425b23110800000000000000
+      internalID: 1239252015168060162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_37
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 593
+        width: 175
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58effaf39cff9e930800000000000000
+      internalID: 4173147769557483141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_38
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 593
+        width: 175
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa5376edf24d2c90800000000000000
+      internalID: -7193019371580335369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_39
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 593
+        width: 175
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b610918fca1b5d0e0800000000000000
+      internalID: -2245693482719444629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_40
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 593
+        width: 175
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e684d325151484f0800000000000000
+      internalID: -827513250989701402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_41
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 457
+        width: 175
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea4a5d48a7277de0800000000000000
+      internalID: -1335555160686310679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_42
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 457
+        width: 175
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 399764c319ca2da90800000000000000
+      internalID: -7290575106977924717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_43
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 464
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56376883f5ac7fcc0800000000000000
+      internalID: -3677248060405681307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_44
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 464
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eae19773acbab8e30800000000000000
+      internalID: 4506884737116741294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_45
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 464
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b3066e90cf1cce0800000000000000
+      internalID: -1386550090803430564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_46
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 328
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8289b721dec32c0b0800000000000000
+      internalID: -5709934388637362136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_47
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 328
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be55f035e8f2b550800000000000000
+      internalID: 6175271702330957496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_48
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 331
+        width: 176
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a176161c0fcc53590800000000000000
+      internalID: -7695019053884020966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_49
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 331
+        width: 176
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d255e5ade34e61b0800000000000000
+      internalID: -5661512993588555054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_50
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 331
+        width: 176
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9e7788868f56610800000000000000
+      internalID: 1613969169332038049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_51
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 202
+        width: 176
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5a876e71d8f6550800000000000000
+      internalID: 6156294349429188054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_52
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 202
+        width: 176
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4946c2fe0a9e3810800000000000000
+      internalID: 1747003094459631951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_53
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 199
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 409147cbf36bed310800000000000000
+      internalID: 1431782116411316484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_54
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 199
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03eb249c47178940800000000000000
+      internalID: 5298229104295535375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_55
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 199
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d6a8ee5124030d0800000000000000
+      internalID: -3445181052974633723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_56
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 70
+        width: 176
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a8f4a70277eff80800000000000000
+      internalID: -8070882500826658165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nimpass_57
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 63
+        width: 175
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a4586e4ba4d0770800000000000000
+      internalID: 8578595006032726631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

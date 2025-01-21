@@ -1,0 +1,1506 @@
+fileFormatVersion: 2
+guid: 145bc992024712045bf7c2a7e58fe525
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9032150499199618769
+    second: AllgameUI_0
+  - first:
+      213: -7149664420890028140
+    second: AllgameUI_1
+  - first:
+      213: 5604762159389488673
+    second: AllgameUI_2
+  - first:
+      213: -6831209691644679922
+    second: AllgameUI_3
+  - first:
+      213: 6182361169236542664
+    second: AllgameUI_4
+  - first:
+      213: -6167531460793393708
+    second: AllgameUI_5
+  - first:
+      213: 3610459906253330976
+    second: AllgameUI_6
+  - first:
+      213: -220115489964203367
+    second: AllgameUI_7
+  - first:
+      213: -3215978771562235776
+    second: AllgameUI_8
+  - first:
+      213: 1868651666101833775
+    second: AllgameUI_9
+  - first:
+      213: -7718188391810440817
+    second: AllgameUI_10
+  - first:
+      213: -7569389728609813592
+    second: AllgameUI_11
+  - first:
+      213: 4017995479804000146
+    second: AllgameUI_12
+  - first:
+      213: 5201904775750826152
+    second: AllgameUI_13
+  - first:
+      213: -2684695903738031220
+    second: AllgameUI_14
+  - first:
+      213: 6774406487909367365
+    second: AllgameUI_15
+  - first:
+      213: 8312158214116227389
+    second: AllgameUI_16
+  - first:
+      213: 7438755775176693689
+    second: AllgameUI_17
+  - first:
+      213: 8729219897298451347
+    second: AllgameUI_18
+  - first:
+      213: 1817683489737132028
+    second: AllgameUI_19
+  - first:
+      213: 8760759806397748369
+    second: AllgameUI_20
+  - first:
+      213: 1094966589298038419
+    second: AllgameUI_21
+  - first:
+      213: 7023993988682857601
+    second: AllgameUI_22
+  - first:
+      213: 2142489615055689496
+    second: AllgameUI_23
+  - first:
+      213: -7218666501802344601
+    second: AllgameUI_24
+  - first:
+      213: 6539351930029076416
+    second: AllgameUI_25
+  - first:
+      213: -3104785606857666596
+    second: AllgameUI_26
+  - first:
+      213: -6504932599457222478
+    second: AllgameUI_27
+  - first:
+      213: 2384460510162199418
+    second: AllgameUI_28
+  - first:
+      213: -760518178312478756
+    second: AllgameUI_29
+  - first:
+      213: -4541926334785257837
+    second: AllgameUI_30
+  - first:
+      213: 7700003964135732851
+    second: AllgameUI_31
+  - first:
+      213: 1046323345688464428
+    second: AllgameUI_32
+  - first:
+      213: 4992903166431733988
+    second: AllgameUI_33
+  - first:
+      213: 4800371761239382243
+    second: AllgameUI_34
+  - first:
+      213: -4891423946084722984
+    second: AllgameUI_35
+  - first:
+      213: 564011402957816617
+    second: AllgameUI_36
+  - first:
+      213: 479971494236095589
+    second: AllgameUI_37
+  - first:
+      213: -8116679483205845394
+    second: AllgameUI_38
+  - first:
+      213: 5425598934954805150
+    second: AllgameUI_39
+  - first:
+      213: 6339881145716347380
+    second: AllgameUI_40
+  - first:
+      213: 2745106558285009175
+    second: AllgameUI_41
+  - first:
+      213: 5178561939631771940
+    second: AllgameUI_42
+  - first:
+      213: -4124245124188244391
+    second: AllgameUI_43
+  - first:
+      213: -6455111986019914854
+    second: AllgameUI_44
+  - first:
+      213: -1306066166546829969
+    second: AllgameUI_45
+  - first:
+      213: -5859613663706135722
+    second: AllgameUI_46
+  - first:
+      213: 3963387978621609919
+    second: AllgameUI_47
+  - first:
+      213: 2209741550327172782
+    second: AllgameUI_48
+  - first:
+      213: 2671409788485104805
+    second: AllgameUI_49
+  - first:
+      213: -4673599940028758179
+    second: AllgameUI_50
+  - first:
+      213: 4050594814989060836
+    second: AllgameUI_51
+  - first:
+      213: -5281117699647865542
+    second: AllgameUI_52
+  - first:
+      213: -6681190811558236605
+    second: AllgameUI_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AllgameUI_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 671
+        width: 118
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f21f651b9fa57a280800000000000000
+      internalID: -9032150499199618769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 671
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497d999f61a47cc90800000000000000
+      internalID: -7149664420890028140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_2
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 671
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12636f81d7d18cd40800000000000000
+      internalID: 5604762159389488673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_3
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 671
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e09205f8afaa231a0800000000000000
+      internalID: -6831209691644679922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_4
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 671
+        width: 118
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c443855ab82cc550800000000000000
+      internalID: 6182361169236542664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_5
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 671
+        width: 118
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dd1d5a30d6886aa0800000000000000
+      internalID: -6167531460793393708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_6
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 675
+        width: 118
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a150cd72eea1230800000000000000
+      internalID: 3610459906253330976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_7
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 675
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9926f1bc02ef1fcf0800000000000000
+      internalID: -220115489964203367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_8
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 675
+        width: 117
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088f5d3a85c8e53d0800000000000000
+      internalID: -3215978771562235776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_9
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 675
+        width: 118
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2011fe2ac8cee910800000000000000
+      internalID: 1868651666101833775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 544
+        width: 118
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f816894ec8c73e490800000000000000
+      internalID: -7718188391810440817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_11
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 544
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8abb8bb652024f690800000000000000
+      internalID: -7569389728609813592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_12
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 544
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297b7d2c999c2c730800000000000000
+      internalID: 4017995479804000146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_13
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 544
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a8390a25d0e03840800000000000000
+      internalID: 5201904775750826152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_14
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 544
+        width: 118
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c839fb7bc4b0ebad0800000000000000
+      internalID: -2684695903738031220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_15
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 544
+        width: 118
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e70f3fec6830e50800000000000000
+      internalID: 6774406487909367365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_16
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 552
+        width: 111
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d393e352bd7ba5370800000000000000
+      internalID: 8312158214116227389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_17
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 552
+        width: 111
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7da4e17f4cb3760800000000000000
+      internalID: 7438755775176693689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_18
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 536
+        width: 118
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39bfeb84f3b642970800000000000000
+      internalID: 8729219897298451347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_19
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 536
+        width: 118
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7cfdfd085b93910800000000000000
+      internalID: 1817683489737132028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_20
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 411
+        width: 112
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1949bde90a8749970800000000000000
+      internalID: 8760759806397748369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_21
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 411
+        width: 112
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 396d704cf4a123f00800000000000000
+      internalID: 1094966589298038419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_22
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 411
+        width: 112
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18cbbe7615d3a7160800000000000000
+      internalID: 7023993988682857601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_23
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 411
+        width: 111
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8179b5814f6abbd10800000000000000
+      internalID: 2142489615055689496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_24
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 411
+        width: 112
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f3f00101522db90800000000000000
+      internalID: -7218666501802344601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_25
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 411
+        width: 112
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cfe5a2fee170ca50800000000000000
+      internalID: 6539351930029076416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_26
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 410
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdfc08fb0f599e4d0800000000000000
+      internalID: -3104785606857666596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_27
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 410
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b07e71f346d9b5a0800000000000000
+      internalID: -6504932599457222478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_28
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 422
+        width: 118
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a732a29533e471120800000000000000
+      internalID: 2384460510162199418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_29
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 422
+        width: 118
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf15780fb81275f0800000000000000
+      internalID: -760518178312478756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_30
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 284
+        width: 112
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ef12b0016d7f0c0800000000000000
+      internalID: -4541926334785257837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_31
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 284
+        width: 112
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376f86b1fc8ebda60800000000000000
+      internalID: 7700003964135732851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_32
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 284
+        width: 112
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c85fb0a89458e00800000000000000
+      internalID: 1046323345688464428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_33
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 284
+        width: 111
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e82611f9fa5a4540800000000000000
+      internalID: 4992903166431733988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_34
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 284
+        width: 112
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e85d72fea85e9240800000000000000
+      internalID: 4800371761239382243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_35
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 284
+        width: 112
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6d7cf36db2e1cb0800000000000000
+      internalID: -4891423946084722984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_36
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 295
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 923029af165c3d700800000000000000
+      internalID: 564011402957816617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_37
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 295
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5648140f78339a600800000000000000
+      internalID: 479971494236095589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_38
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 155
+        width: 118
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e70d79303cb5f80800000000000000
+      internalID: -8116679483205845394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_39
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 155
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9708bb3c799b4b40800000000000000
+      internalID: 5425598934954805150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_40
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 155
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f19e98df48cbf750800000000000000
+      internalID: 6339881145716347380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_41
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 155
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7115c2dded3981620800000000000000
+      internalID: 2745106558285009175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_42
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 155
+        width: 118
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4211c1b95a2fdd740800000000000000
+      internalID: 5178561939631771940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_43
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 155
+        width: 118
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9567f1629ecb3c6c0800000000000000
+      internalID: -4124245124188244391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_44
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 155
+        width: 118
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9baaef69d5da66a0800000000000000
+      internalID: -6455111986019914854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_45
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 155
+        width: 118
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6de1d9cdbbefdde0800000000000000
+      internalID: -1306066166546829969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_46
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 28
+        width: 118
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65345cd1b687eaea0800000000000000
+      internalID: -5859613663706135722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_47
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 28
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb76bcc1e58c00730800000000000000
+      internalID: 3963387978621609919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_48
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 28
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eae0ca87b349aae10800000000000000
+      internalID: 2209741550327172782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_49
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 28
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a4f7248c01c21520800000000000000
+      internalID: 2671409788485104805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_50
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 28
+        width: 118
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d578c48cd99042fb0800000000000000
+      internalID: -4673599940028758179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_51
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 28
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ea4674f58a963830800000000000000
+      internalID: 4050594814989060836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_52
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 41
+        width: 117
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3df577ce63b5b6b0800000000000000
+      internalID: -5281117699647865542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AllgameUI_53
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 41
+        width: 118
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ea778fa54a743a0800000000000000
+      internalID: -6681190811558236605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
