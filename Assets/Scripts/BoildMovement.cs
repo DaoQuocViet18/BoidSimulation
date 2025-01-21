@@ -1,3 +1,4 @@
+﻿using System;
 using UnityEngine;
 
 public class BoildMovement : MonoBehaviour
@@ -9,5 +10,12 @@ public class BoildMovement : MonoBehaviour
     {
         Velocity = Vector2.Lerp(Velocity, transform.forward.normalized * forwardSpeed, 10f * Time.fixedDeltaTime);
         transform.position += Velocity * Time.fixedDeltaTime;
+        LookRotaion();
+    }
+
+    private void LookRotaion()
+    {
+        transform.rotation = Quaternion.Slerp(transform.localRotation, 
+            Quaternion.LookRotation(Velocity), Time.fixedDeltaTime);
     }
 }
