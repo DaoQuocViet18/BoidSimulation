@@ -47,6 +47,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boids: {fileID: 11400000, guid: 67829a986a8675043989127a50a0624e, type: 2}
+  radius: 2
+  forwardSpeed: 25
+  visionAngle: 270
+  turnSpeed: 16
 --- !u!114 &6640269599316185648
 MonoBehaviour:
   m_ObjectHideFlags: 0

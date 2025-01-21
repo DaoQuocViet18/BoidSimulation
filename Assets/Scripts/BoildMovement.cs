@@ -5,22 +5,30 @@ using UnityEngine;
 public class BoildMovement : MonoBehaviour
 {
     [SerializeField] private ListBoidVariable boids;
-    private float radius = 2f;
-    private float forwardSpeed = 5f;
-    private float visionAngle = 270f;
+    [SerializeField] private float radius = 2f;
+    [SerializeField] private float forwardSpeed = 25f;
+    [SerializeField] private float visionAngle = 270f;
+    [SerializeField] private float turnSpeed = 16f;
     public Vector3 Velocity { get; private set; }
 
     private void FixedUpdate()
     {
-        Velocity = Vector2.Lerp(Velocity, transform.forward.normalized * forwardSpeed, 10f * Time.fixedDeltaTime);
+        Velocity = Vector2.Lerp(Velocity, CaculateVelocity(), turnSpeed / 2 * Time.fixedDeltaTime);
         transform.position += Velocity * Time.fixedDeltaTime;
         LookRotaion();
+    }
+
+    private Vector3 CaculateVelocity()
+    {
+        var boidsInRange = BoidsInRange();
+        Vector2 velocity = (Vector2)transform.forward + Separation(boidsInRange).normalized * forwardSpeed;
+        return velocity;
     }
 
     private void LookRotaion()
     {
         transform.rotation = Quaternion.Slerp(transform.localRotation, 
-            Quaternion.LookRotation(Velocity), Time.fixedDeltaTime);
+            Quaternion.LookRotation(Velocity), turnSpeed * Time.fixedDeltaTime);
     }
 
     private List<BoildMovement> BoidsInRange()
@@ -51,4 +59,16 @@ public class BoildMovement : MonoBehaviour
             Gizmos.DrawLine(transform.position, boid.transform.position);
         }
     }
+
+    private Vector2 Separation(List<BoildMovement> boildMovements)
+    {
+        Vector2 dirtection = Vector2.zero;
+        foreach (var boid in boildMovements)
+        {
+            float radio = Mathf.Clamp01((boid.transform.position - transform.position).magnitude / radius);
+            dirtection -= radio * (Vector2)(boid.transform.position - transform.position);
+        }
+        return dirtection.normalized;
+    } 
+        
 }
