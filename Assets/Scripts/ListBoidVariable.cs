@@ -4,5 +4,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ListBoidVariable", menuName = "Scriptable Objects/ListBoidVariable")]
 public class ListBoidVariable : ScriptableObject
 {
-    public List<BoildMovement> boidMovements = new List<BoildMovement>();
+    public List<Transform> boidTransform = new List<Transform>();
 }
