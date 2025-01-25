@@ -3,14 +3,12 @@ using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
 using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public struct QuadElement<T> where T : unmanaged
 {
     public float2 position;
     public T element;
 }
-
 public struct QuadNode
 {
     public int firstChildIndex;
@@ -35,7 +33,7 @@ public unsafe partial struct NativeQuadTree<T> : IDisposable where T : unmanaged
     [SerializeField] byte maxDepth;
     [SerializeField] ushort maxLeafElements;
 
-    public NativeQuadTree(QuadBounds bounds, Allocator allocator = Allocator.Temp, 
+    public NativeQuadTree(QuadBounds bounds, Allocator allocator = Allocator.Temp,
         byte maxDepth = 6, ushort maxLeafElements = 32, int initialElementsCapacity = 256)
     {
         this.bounds = bounds;
@@ -53,34 +51,33 @@ public unsafe partial struct NativeQuadTree<T> : IDisposable where T : unmanaged
             NativeArrayOptions.ClearMemory);
 
         nodes = UnsafeList<QuadNode>.Create(
-            totalSize,
-            allocator,
-            NativeArrayOptions.ClearMemory);
+           totalSize,
+           allocator,
+           NativeArrayOptions.ClearMemory);
 
         elements = UnsafeList<QuadElement<T>>.Create(
-            initialElementsCapacity,
-            allocator);
+           initialElementsCapacity,
+           allocator);
     }
-
-    public void ClearAndBulkInsert(NativeArray<QuadElement<T>> incomingElement)
+    public void ClearAndBulkInsert(NativeArray<QuadElement<T>> incomingElements)
     {
         Clear();
 
-        if (elements->Capacity < incomingElement.Length)
+        if (elements->Capacity < incomingElements.Length)
         {
-            elements->Resize(math.max(incomingElement.Length, elements->Capacity * 2));
+            elements->Resize(math.max(incomingElements.Length, elements->Capacity * 2));
         }
 
-        var mortonCodes = new NativeArray<int>(incomingElement.Length, Allocator.Temp);
-        var depthExxtentsScalling = LookupTables.DepthLookup[maxDepth] / bounds.extents;
-        for (int i = 0; i < mortonCodes.Length; i++)
+        var mortonCodes = new NativeArray<int>(incomingElements.Length, Allocator.Temp);
+        var depthExtentsScaling = LookupTables.DepthLookup[maxDepth] / bounds.extents;
+        for (int i = 0; i < incomingElements.Length; i++)
         {
-            var positionElement = incomingElement[i].position;
+            var positionElement = incomingElements[i].position;
             positionElement -= bounds.center;
             positionElement.y = -positionElement.y;
-            var position = (positionElement + bounds.extents) * 0.5f;
-            position *= depthExxtentsScalling;
-            mortonCodes[i] = LookupTables.MortonLookup[(int)position.x] | (LookupTables.MortonLookup[(int)position.y] << i);
+            var position = (positionElement + bounds.extents) * .5f;
+            position *= depthExtentsScaling;
+            mortonCodes[i] = LookupTables.MortonLookup[(int)position.x] | (LookupTables.MortonLookup[(int)position.y] << 1);
 
             int atIndex = 0;
             for (int depth = maxDepth; depth >= 0; depth--)
@@ -89,10 +86,9 @@ public unsafe partial struct NativeQuadTree<T> : IDisposable where T : unmanaged
                 atIndex += IncrementIndex(mortonCodes[i], depth);
             }
         }
-
         RecursivePrepareLeaves();
 
-        for (int i = 0; i < incomingElement.Length; i++)
+        for (int i = 0; i < incomingElements.Length; i++)
         {
             int atIndex = 0;
             for (int depth = maxDepth; depth >= 0; depth--)
@@ -100,7 +96,7 @@ public unsafe partial struct NativeQuadTree<T> : IDisposable where T : unmanaged
                 var node = UnsafeUtility.ReadArrayElement<QuadNode>(nodes->Ptr, atIndex);
                 if (node.isLeaf)
                 {
-                    UnsafeUtility.WriteArrayElement(elements->Ptr, node.firstChildIndex + node.count, incomingElement[i]);
+                    UnsafeUtility.WriteArrayElement(elements->Ptr, node.firstChildIndex + node.count, incomingElements[i]);
                     node.count++;
                     UnsafeUtility.WriteArrayElement(nodes->Ptr, atIndex, node);
                     break;
@@ -111,13 +107,11 @@ public unsafe partial struct NativeQuadTree<T> : IDisposable where T : unmanaged
 
         mortonCodes.Dispose();
     }
-
     private int IncrementIndex(int mortonCodes, int depth)
     {
         int shiftedMortonCode = (mortonCodes >> ((depth - 1) * 2)) & 0b11;
         return (LookupTables.DepthSizeLookup[depth] * shiftedMortonCode) + 1;
     }
-
     private void RecursivePrepareLeaves(int previousOffset = 1, int depth = 1)
     {
         for (int i = 0; i < 4; i++)
@@ -130,30 +124,27 @@ public unsafe partial struct NativeQuadTree<T> : IDisposable where T : unmanaged
             }
             else if (elementCount != 0)
             {
-                var node = new QuadNode { firstChildIndex = elementCount, count = 0, isLeaf = true };
+                var node = new QuadNode { firstChildIndex = elementsCount, count = 0, isLeaf = true };
                 UnsafeUtility.WriteArrayElement(nodes->Ptr, atIndex, node);
-                this.elementsCount += elementCount;
+                elementsCount += elementCount;
             }
         }
     }
-
     public void RangeQuery(QuadBounds bounds, NativeList<QuadElement<T>> results)
     {
         new QuadTreeRangeQuery(this, bounds, results);
     }
-
-    public void DrawGizmos(QuadBounds boundParent = default, int previousOffset = 1,  int depth = 1)
+    public void DrawGizmos(QuadBounds boundsParent = default, int prevousOffset = 1, int depth = 1)
     {
-        Gizmos.DrawWireCube((Vector2)boundParent.center, (Vector2)boundParent.Size);
-
+        Gizmos.DrawWireCube((Vector2)boundsParent.center, (Vector2)boundsParent.Size);
         if (lookup == null) return;
-        else if (boundParent.Equals(default(QuadBounds))) boundParent = bounds;
+        else if (boundsParent.Equals(default(QuadBounds))) boundsParent = bounds;
 
         var depthSize = LookupTables.DepthSizeLookup[maxDepth - depth + 1];
         for (int i = 0; i < 4; i++)
         {
-            var boundsChild = boundParent.GetBoundsChild(i);
-            int atIndex = previousOffset + i * depthSize;
+            var boundsChild = boundsParent.GetBoundsChild(i);
+            int atIndex = prevousOffset + i * depthSize;
             var elementCount = UnsafeUtility.ReadArrayElement<int>(lookup->Ptr, atIndex);
             if (elementCount > maxLeafElements && depth < maxDepth)
             {
@@ -165,7 +156,6 @@ public unsafe partial struct NativeQuadTree<T> : IDisposable where T : unmanaged
             }
         }
     }
-
     public void Clear()
     {
         UnsafeUtility.MemClear(lookup->Ptr, lookup->Capacity * UnsafeUtility.SizeOf<int>());
@@ -173,7 +163,6 @@ public unsafe partial struct NativeQuadTree<T> : IDisposable where T : unmanaged
         UnsafeUtility.MemClear(elements->Ptr, elements->Capacity * UnsafeUtility.SizeOf<QuadElement<T>>());
         elementsCount = 0;
     }
-
     public void Dispose()
     {
         UnsafeList<QuadElement<T>>.Destroy(elements);

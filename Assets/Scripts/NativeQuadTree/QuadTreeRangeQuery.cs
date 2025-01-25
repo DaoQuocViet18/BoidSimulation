@@ -22,31 +22,31 @@ public unsafe partial struct NativeQuadTree<T> where T : unmanaged
             RecursiveRangeQuery(tree.bounds);
             fastResults->Length = count;
         }
-
-        public void RecursiveRangeQuery(QuadBounds boundsParent = default, 
-            bool containedParent = false, int previousOffset = 1, int depth = 1)
+        public void RecursiveRangeQuery(QuadBounds boundsParent, bool containedParent = false,
+            int prevousOffset = 1, int depth = 1)
         {
             var totalNodesCount = count + 4 * tree.maxLeafElements;
             if (totalNodesCount > fastResults->Capacity)
             {
                 fastResults->Resize(math.max(fastResults->Capacity * 2, totalNodesCount));
             }
+
             var depthSize = LookupTables.DepthSizeLookup[tree.maxDepth - depth + 1];
             for (int i = 0; i < 4; i++)
             {
-                var boundChild = boundsParent.GetBoundsChild(i);
+                var boundsChild = boundsParent.GetBoundsChild(i);
                 var contained = containedParent;
                 if (!contained)
                 {
-                    if (bounds.ContainsCircle(boundChild)) contained = true;
-                    else if (!bounds.IntersectsCircle(boundChild)) continue;
+                    if (bounds.ContainsCircle(boundsChild)) contained = true;
+                    else if (!bounds.IntersectsCircle(boundsChild)) continue;
                 }
 
-                var atIndex = previousOffset + i * depthSize;
+                var atIndex = prevousOffset + i * depthSize;
                 var elementCount = UnsafeUtility.ReadArrayElement<int>(tree.lookup->Ptr, atIndex);
                 if (elementCount > tree.maxLeafElements && depth < tree.maxDepth)
                 {
-                    RecursiveRangeQuery(boundChild, contained, atIndex + 1, depth + 1);
+                    RecursiveRangeQuery(boundsChild, contained, atIndex + 1, depth + 1);
                 }
                 else if (elementCount != 0)
                 {
@@ -54,7 +54,7 @@ public unsafe partial struct NativeQuadTree<T> where T : unmanaged
                     if (contained)
                     {
                         var index = (void*)((IntPtr)tree.elements->Ptr + node.firstChildIndex * UnsafeUtility.SizeOf<QuadElement<T>>());
-                        UnsafeUtility.MemCpy((void*)((IntPtr)fastResults->Ptr + count * UnsafeUtility.SizeOf<QuadElement<T>>()), 
+                        UnsafeUtility.MemCpy((void*)((IntPtr)fastResults->Ptr + count * UnsafeUtility.SizeOf<QuadElement<T>>()),
                             index, node.count * UnsafeUtility.SizeOf<QuadElement<T>>());
                         count += node.count;
                     }

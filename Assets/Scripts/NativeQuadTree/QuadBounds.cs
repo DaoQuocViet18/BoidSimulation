@@ -1,18 +1,16 @@
 using System;
 using Unity.Mathematics;
-using Unity.VisualScripting;
-using UnityEngine;
 
 [Serializable]
-public struct QuadBounds 
+public struct QuadBounds
 {
     public float2 center;
     public float2 extents;
     public float2 Size => extents * 2f;
-    public float2 Half => extents * 2f;
+    public float2 Haft => extents * .5f;
     public float2 Min => center - extents;
     public float2 Max => center + extents;
-    public float2 Radius => math.length(extents);
+    public float Radius => math.length(extents);
 
     public QuadBounds(float2 center, float2 extents) => (this.center, this.extents) = (center, extents);
     public bool Contains(float2 point) => math.all(point >= Min) && math.all(point <= Max);
@@ -30,26 +28,26 @@ public struct QuadBounds
         float distanceSquared = math.lengthsq(center - closesPoint);
         return distanceSquared <= math.length(Radius);
     }
-    public float2 GetCorner(int zInderChild)
+    public float2 GetCorner(int zIndexChild)
     {
-        return zInderChild switch
+        return zIndexChild switch
         {
             0 => new float2(Min.x, Max.y),
             1 => Max,
             2 => Min,
             3 => new float2(Max.x, Min.y),
-            _ => throw new ArgumentOutOfRangeException(nameof(zInderChild)),
+            _ => throw new ArgumentOutOfRangeException(nameof(zIndexChild)),
         };
     }
-    public QuadBounds GetBoundsChild(int zInderChild)
+    public QuadBounds GetBoundsChild(int zIndexChild)
     {
-        return zInderChild switch
+        return zIndexChild switch
         {
-            0 => new QuadBounds(new float2(center.x - Half.x, center.x + Half.y), Half),
-            1 => new QuadBounds(center + Half, Half),
-            2 => new QuadBounds(center - Half, Half),
-            3 => new QuadBounds(new float2(center.x + Half.x, center.x - Half.y), Half),
-            _ => throw new ArgumentOutOfRangeException(nameof(zInderChild)),
+            0 => new QuadBounds(new float2(center.x - Haft.x, center.y + Haft.y), Haft),
+            1 => new QuadBounds(center + Haft, Haft),
+            2 => new QuadBounds(center - Haft, Haft),
+            3 => new QuadBounds(new float2(center.x + Haft.x, center.y - Haft.y), Haft),
+            _ => throw new ArgumentOutOfRangeException(nameof(zIndexChild)),
         };
     }
 }

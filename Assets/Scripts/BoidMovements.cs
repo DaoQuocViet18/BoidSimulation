@@ -5,7 +5,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Jobs;
 
-public class BoildMovements : MonoBehaviour
+public class BoidMovements : MonoBehaviour
 {
     [SerializeField] private ListBoidVariable boids;
     [SerializeField] private QuadBounds quadBounds;
