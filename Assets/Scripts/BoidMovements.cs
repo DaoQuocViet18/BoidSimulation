@@ -1,6 +1,7 @@
 ﻿using Unity.Burst;
 using Unity.Collections;
 using Unity.Jobs;
+using Unity.Jobs.LowLevel.Unsafe;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Jobs;
@@ -20,9 +21,9 @@ public class BoidMovements : MonoBehaviour
 
     private void Start()
     {
-        quadTree = new NativeQuadTree<float2>(quadBounds, Allocator.Persistent, maxDepth: 8, maxLeafElements: 128);
+        quadTree = new NativeQuadTree<float2>(quadBounds, Allocator.Persistent, maxDepth: 8, maxLeafElements: 256);
         var boidCount = boids.boidTransform.Count;
-        transformAccessArray = new TransformAccessArray(boidCount);
+        transformAccessArray = new TransformAccessArray(boidCount, JobsUtility.JobWorkerCount);
         velocities = new NativeArray<float2>(boidCount, Allocator.Persistent);
         for (int i = 0; i < boidCount; i++)
         {
@@ -30,7 +31,6 @@ public class BoidMovements : MonoBehaviour
             velocities[i] = (Vector2)boids.boidTransform[i].forward;
         }
     }
-
     private void Update()
     {
         UpdateQuadTree();
@@ -39,7 +39,7 @@ public class BoidMovements : MonoBehaviour
 
     private void ApplyRule()
     {
-        var boildMovementsJob = new BoildMovementsJob
+        var boidMovementsJob = new BoidMovementsJob
         {
             quadTree = quadTree,
             velocities = velocities,
@@ -50,8 +50,8 @@ public class BoidMovements : MonoBehaviour
             visionAngle = visionAngle,
             deltaTime = Time.deltaTime,
         };
-        JobHandle boidMovementJobHandle = boildMovementsJob.Schedule(transformAccessArray);
-        boidMovementJobHandle.Complete();
+        JobHandle boidMovementsJobHandle = boidMovementsJob.Schedule(transformAccessArray);
+        boidMovementsJobHandle.Complete();
     }
 
     private void UpdateQuadTree()
@@ -65,7 +65,6 @@ public class BoidMovements : MonoBehaviour
     }
 
     private void OnDrawGizmosSelected() => quadTree.DrawGizmos(quadBounds);
-
     private void OnDestroy()
     {
         transformAccessArray.Dispose();
@@ -90,7 +89,7 @@ public class BoidMovements : MonoBehaviour
     }
 
     [BurstCompile]
-    private struct BoildMovementsJob : IJobParallelForTransform
+    private struct BoidMovementsJob : IJobParallelForTransform
     {
         public NativeQuadTree<float2> quadTree;
         public NativeArray<float2> velocities;
@@ -100,40 +99,37 @@ public class BoidMovements : MonoBehaviour
         public float radius;
         public float visionAngle;
         public float deltaTime;
-
         public void Execute(int index, TransformAccess transform)
         {
             Vector3 velocity = (Vector2)velocities[index];
-            velocity = Vector2.Lerp(velocity, CaculateVelocity(transform), turnSpeed / 2 * deltaTime);
+            velocity = Vector2.Lerp(velocity, CalculateVelocity(transform), turnSpeed / 2 * deltaTime);
             transform.position += velocity * deltaTime;
             if (velocity != Vector3.zero)
             {
                 transform.rotation = Quaternion.Slerp(transform.localRotation,
-                Quaternion.LookRotation(velocity), turnSpeed * deltaTime);
+                    Quaternion.LookRotation(velocity), turnSpeed * deltaTime);
             }
 
             velocities[index] = (Vector2)velocity;
         }
-
-        private Vector3 CaculateVelocity(TransformAccess transform)
+        private Vector2 CalculateVelocity(TransformAccess transform)
         {
             float3 currentPosition = transform.position;
+            Vector2 currentForward = transform.localToWorldMatrix.MultiplyVector(Vector3.forward);
             var separation = Vector2.zero;
             var aligment = Vector2.zero;
             var cohesion = Vector2.zero;
-            Vector2 currentForward = transform.localToWorldMatrix.MultiplyVector(Vector3.forward);
             var boidsInRange = BoidsInRange(currentPosition);
             var boidCount = boidsInRange.Length;
-            for (int i = 0; i < boidCount; i++)
+            for (var i = 0; i < boidCount; i++)
             {
-                if (!InVisionCone(currentPosition.xy, boidsInRange[i].position, currentForward))
-                {
-                    boidsInRange.RemoveAtSwapBack(i);
-                    boidCount--;
-                    i--;
-                    continue;
-                }
-
+                //if (!InVisionCone(currentPosition.xy, boidsInRange[i].position, currentForward))
+                //{
+                //    boidsInRange.RemoveAtSwapBack(i);
+                //    boidCount--;
+                //    i--;
+                //    continue;
+                //}
                 separation -= Separation(currentPosition.xy, boidsInRange[i].position.xy);
                 aligment += (Vector2)boidsInRange[i].element.xy;
                 cohesion += (Vector2)boidsInRange[i].position.xy;
@@ -141,37 +137,36 @@ public class BoidMovements : MonoBehaviour
             separation = separation.normalized;
             aligment = Aligment(aligment, currentForward, boidCount);
             cohesion = Cohesion(cohesion, currentPosition.xy, boidCount);
-            Vector2 velocity = (currentForward 
-                + 2.0f * separation
-                + 0.5f * aligment
-                + 1.0f * cohesion
+            Vector3 velocity = (currentForward
+                + separation
+                + 0.2f * aligment
+                + cohesion
                 ).normalized * forwardSpeed;
+
             transform = Boundary(transform, currentPosition);
+            boidsInRange.Dispose();
             return velocity;
         }
-
-        private NativeList<QuadElement<float2>> BoidsInRange (float3 position)
+        private NativeList<QuadElement<float2>> BoidsInRange(float3 position)
         {
             var results = new NativeList<QuadElement<float2>>(Allocator.Temp);
-            QuadBounds quadBounds = new QuadBounds(position.xy, new float2(radius, radius));
-            quadTree.RangeQuery(quadBounds, results);
+            QuadBounds queryBounds = new QuadBounds(position.xy, new float2(radius, radius));
+            quadTree.RangeQuery(queryBounds, results);
             return results;
         }
-
         private bool InVisionCone(Vector2 position, Vector2 forward, Vector2 boidPosition)
         {
             Vector2 directionToPosition = boidPosition - position;
             float dotProduct = Vector2.Dot(forward.normalized, directionToPosition);
-            float costHalfVisionAngle = Mathf.Cos(visionAngle * 0.5f * Mathf.Deg2Rad);
-            return dotProduct >= costHalfVisionAngle;
+            float cosHalfVisionAngle = Mathf.Cos(visionAngle * 0.5f * Mathf.Deg2Rad);
+            return dotProduct >= cosHalfVisionAngle;
         }
-
         private Vector2 Separation(Vector2 currentPosition, Vector2 boidPosition)
         {
-            float radio = Mathf.Clamp01((boidPosition - currentPosition).magnitude / radius);
-            return (1-radio) * (boidPosition - currentPosition);
+            float ratio = Mathf.Clamp01((boidPosition - currentPosition)
+                .magnitude / radius);
+            return (1 - ratio) * (boidPosition - currentPosition);
         }
-
         private Vector2 Aligment(Vector2 direction, Vector2 forward, int boidCount)
         {
             if (boidCount != 0) direction /= boidCount;
@@ -187,25 +182,21 @@ public class BoidMovements : MonoBehaviour
 
             return (center - position).normalized;
         }
-
         private readonly TransformAccess Boundary(TransformAccess transform, float3 currentPosition)
         {
             float2 limitBounds = quadBounds.extents * 0.95f;
-            if (currentPosition.x > quadBounds.center.x + limitBounds.x || 
+            if (currentPosition.x > quadBounds.center.x + limitBounds.x ||
                 currentPosition.x < quadBounds.center.x - limitBounds.x)
             {
-                currentPosition.x = currentPosition.x > 0 ? 
-                    quadBounds.center.x - limitBounds.x : 
-                    quadBounds.center.x + limitBounds.x;
+                currentPosition.x = currentPosition.x > 0 ?
+                    quadBounds.center.x - limitBounds.x : quadBounds.center.x + limitBounds.x;
                 transform.position = currentPosition;
             }
-
-            if (currentPosition.y > quadBounds.center.y + limitBounds.y || 
+            if (currentPosition.y > quadBounds.center.y + limitBounds.y ||
                 currentPosition.y < quadBounds.center.y - limitBounds.y)
             {
-                currentPosition.y = currentPosition.y > 0 ? 
-                    quadBounds.center.y - limitBounds.y : 
-                    quadBounds.center.y + limitBounds.y;
+                currentPosition.y = currentPosition.y > 0 ?
+                    quadBounds.center.y - limitBounds.y : quadBounds.center.y + limitBounds.y;
                 transform.position = currentPosition;
             }
 

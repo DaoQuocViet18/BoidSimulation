@@ -154,7 +154,7 @@ MonoBehaviour:
       x: 0
       y: 0
     extents:
-      x: 20
+      x: 40
       y: 20
   quadTree:
     elementsCount: 0
@@ -442,7 +442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boids: {fileID: 11400000, guid: 67829a986a8675043989127a50a0624e, type: 2}
   boidPrefab: {fileID: 6522970783757562729, guid: 338011ed1bb3315459284f68e58740ed, type: 3}
-  boidCount: 500
+  boidCount: 5000
 --- !u!1001 &2035325929298766714
 PrefabInstance:
   m_ObjectHideFlags: 0
