@@ -28,7 +28,7 @@ public class BoidMovements : MonoBehaviour
         for (int i = 0; i < boidCount; i++)
         {
             transformAccessArray.Add(boids.boidTransform[i].transform);
-            velocities[i] = (Vector2)boids.boidTransform[i].forward;
+            velocities[i] = (Vector2)boids.boidTransform[i].right;
         }
     }
     private void Update()
@@ -79,7 +79,7 @@ public class BoidMovements : MonoBehaviour
         public void Execute(int index, TransformAccess transform)
         {
             float3 position = transform.position;
-            float3 forward = transform.localToWorldMatrix.MultiplyVector(Vector3.forward);
+            float3 forward = transform.localToWorldMatrix.MultiplyVector(Vector3.right);
             this.forward[index] = new QuadElement<float2>
             {
                 position = position.xy,
@@ -101,21 +101,47 @@ public class BoidMovements : MonoBehaviour
         public float deltaTime;
         public void Execute(int index, TransformAccess transform)
         {
-            Vector3 velocity = (Vector2)velocities[index];
+            // Lấy vận tốc hiện tại và chuyển đổi sang Vector2
+            Vector2 velocity = velocities[index];
+            // Nội suy vận tốc
             velocity = Vector2.Lerp(velocity, CalculateVelocity(transform), turnSpeed / 2 * deltaTime);
-            transform.position += velocity * deltaTime;
-            if (velocity != Vector3.zero)
+            // Cập nhật vị trí mới
+            transform.position += (Vector3)(velocity * deltaTime);
+
+            // Tính toán góc xoay 2D nếu vận tốc khác không
+            if (velocity != Vector2.zero)
             {
-                transform.rotation = Quaternion.Slerp(transform.localRotation,
-                    Quaternion.LookRotation(velocity), turnSpeed * deltaTime);
+                // Tính góc theo radian và chuyển sang độ
+                float angle = Mathf.Atan2(velocity.y, velocity.x) * Mathf.Rad2Deg;
+                // Kiểm tra góc xoay nếu vượt quá 90 độ và dưới 270 độ
+                if (math.abs(angle) > 90f && math.abs(angle) < 270f)
+                {
+                    // Điều chỉnh để set rotation y = 180
+                    transform.rotation = Quaternion.Euler(180f, 0, -angle);
+                }
+                else 
+                {
+                    // Điều chỉnh để set rotation y = 180
+                    transform.rotation = Quaternion.Euler(0, 0, angle);
+                }
+                //else
+                //{
+                //    // Xoay đối tượng với góc bình thường
+                //    transform.rotation = Quaternion.Lerp(
+                //        transform.rotation,
+                //        Quaternion.Euler(0, 0, angle), // Chỉ xoay trên trục Z
+                //        turnSpeed * deltaTime
+                //    );
+                //}
             }
 
-            velocities[index] = (Vector2)velocity;
+            // Lưu lại vận tốc mới
+            velocities[index] = velocity;
         }
         private Vector2 CalculateVelocity(TransformAccess transform)
         {
             float3 currentPosition = transform.position;
-            Vector2 currentForward = transform.localToWorldMatrix.MultiplyVector(Vector3.forward);
+            Vector2 currentForward = transform.localToWorldMatrix.MultiplyVector(Vector3.right);
             var separation = Vector2.zero;
             var aligment = Vector2.zero;
             var cohesion = Vector2.zero;
