@@ -348,7 +348,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MesteryFish_0: 719470669146564757
+      MesteryFish_1: -6038858790651428230
+      MesteryFish_2: -5767408867119889792
+      MesteryFish_3: -5649901129147379721
+      MesteryFish_4: 955177864359459159
+      MesteryFish_5: -2311858541106440517
+      MesteryFish_6: 2464727615352624178
+      MesteryFish_7: 6585859428221613164
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
