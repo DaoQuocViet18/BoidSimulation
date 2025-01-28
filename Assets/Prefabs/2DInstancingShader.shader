@@ -13,6 +13,9 @@
 
         Pass
         {
+            ZWrite On // Bật z-write
+            ZTest LEqual // Kiểm tra độ sâu
+
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
