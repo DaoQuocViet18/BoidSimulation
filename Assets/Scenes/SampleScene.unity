@@ -514,6 +514,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1983175125535931690, guid: 2ab41ceb07b563246b1719772b653bfe, type: 3}
+      propertyPath: boids
+      value: 
+      objectReference: {fileID: 11400000, guid: 9f17d41e6901e194faffc27eba3643af, type: 2}
+    - target: {fileID: 1983175125535931690, guid: 2ab41ceb07b563246b1719772b653bfe, type: 3}
       propertyPath: boidMesh
       value: 
       objectReference: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
