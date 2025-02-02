@@ -21,7 +21,7 @@ public class SpawnBoid : MonoBehaviour
     private Mesh boidMesh;              // Mesh cho boid (cần khởi tạo)
     private MaterialPropertyBlock propertyBlock;          // Block tài nguyên bổ sung
 
-    void Start()
+    void Awake()
     {
         if (boidMaterial == null)
         {
