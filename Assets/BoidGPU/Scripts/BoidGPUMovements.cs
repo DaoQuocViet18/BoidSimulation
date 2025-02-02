@@ -21,7 +21,7 @@ public class BoidGPUMovements : MonoBehaviour
 
     private void Start()
     {
-        int boidCount = boids.boidVariable.Count;  // Kiểm tra danh sách boidVariable có hợp lệ không
+        int boidCount = boids.boidTransform.Count;  // Kiểm tra danh sách boidVariable có hợp lệ không
         if (boidCount == 0)
         {
             Debug.LogError("Không có Boid nào trong danh sách!");
@@ -36,8 +36,8 @@ public class BoidGPUMovements : MonoBehaviour
 
         for (int i = 0; i < boidCount; i++)
         {
-            matrices[i] = boids.boidVariable[i].matrix;  // Lưu ma trận transform của boid
-            velocities[i] = (Vector2)boids.boidVariable[i].direction;  // Lưu hướng di chuyển của boid
+            matrices[i] = boids.boidTransform[i].matrix;  // Lưu ma trận transform của boid
+            velocities[i] = (Vector2)boids.boidTransform[i].direction;  // Lưu hướng di chuyển của boid
         }
     }
 
@@ -48,7 +48,7 @@ public class BoidGPUMovements : MonoBehaviour
     }
     private void UpdateQuadTree()
     {
-        int boidCount = boids.boidVariable.Count;
+        int boidCount = boids.boidTransform.Count;
         if (boidCount == 0) return;
 
         var forward = new NativeArray<QuadElement<float2>>(boidCount, Allocator.TempJob);
@@ -89,9 +89,9 @@ public class BoidGPUMovements : MonoBehaviour
         boidMovementsJobHandle.Complete();  // Đảm bảo job được hoàn thành
 
         // Vẽ tất cả các boid bằng Graphics.DrawMeshInstanced
-        if (boids.boidVariable[0].boidMesh != null && boids.boidVariable[0].boidMaterial != null)
+        if (boids.boidMaterial[0].boidMesh != null && boids.boidMaterial[0].boidMaterial != null)
         {
-            Graphics.DrawMeshInstanced(boids.boidVariable[0].boidMesh, 0, boids.boidVariable[0].boidMaterial, matrices.ToArray(), matrices.Length, boids.boidVariable[0].propertyBlock);
+            Graphics.DrawMeshInstanced(boids.boidMaterial[0].boidMesh, 0, boids.boidMaterial[0].boidMaterial, matrices.ToArray(), matrices.Length, boids.boidMaterial[0].propertyBlock);
         }
     }
 
@@ -164,7 +164,7 @@ public class BoidGPUMovements : MonoBehaviour
                 float angle = Mathf.Atan2(velocity.y, velocity.x) * Mathf.Rad2Deg;
 
                 // Cập nhật ma trận với góc xoay mới
-                if (math.abs(angle) > 90f && math.abs(angle) < 270f)
+                if (math.abs(angle) > 120f && math.abs(angle) < 300f)
                 {
                     matrices[index] = Matrix4x4.TRS(currentPosition, Quaternion.Euler(180f, 0f, -angle), Vector3.one);
                 }

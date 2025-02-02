@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 
-public struct BoidGPUVariable
+public struct BoidGPUTransform
 {
     public Matrix4x4 matrix;  // Ma trận chuyển đổi cho boid
     public Vector3 direction; // Hướng di chuyển của boid
+}
+
+public struct BoidGPUMaterial
+{
     public Material boidMaterial;       // Material hỗ trợ GPU Instancing
     public Mesh boidMesh;               // Mesh cho boid (tam giác)
     public MaterialPropertyBlock propertyBlock;          // Block tài nguyên bổ sung
@@ -14,7 +18,7 @@ public class SpawnBoid : MonoBehaviour
     [SerializeField] private ListBoidGPUVariable boids;   // Danh sách boid
     [SerializeField] private int boidCount = 1000;        // Số lượng boid
     [SerializeField] private Material boidMaterial;      // Material cho boid
-    [SerializeField] private Mesh boidMesh;              // Mesh cho boid (cần khởi tạo)
+    private Mesh boidMesh;              // Mesh cho boid (cần khởi tạo)
     private MaterialPropertyBlock propertyBlock;          // Block tài nguyên bổ sung
 
     void Start()
@@ -43,8 +47,8 @@ public class SpawnBoid : MonoBehaviour
         }
 
         // Nếu danh sách boid đã có phần tử, chúng ta sẽ clear để tạo lại
-        if (boids.boidVariable.Count > 0)
-            boids.boidVariable.Clear();
+        if (boids.boidTransform.Count > 0)
+            boids.boidTransform.Clear();
 
         // Khởi tạo MaterialPropertyBlock
         propertyBlock = new MaterialPropertyBlock();
@@ -53,12 +57,12 @@ public class SpawnBoid : MonoBehaviour
         for (int i = 0; i < boidCount; i++)
         {
             // Tạo vị trí ngẫu nhiên cho boid
-            Vector3 position = new Vector3(Random.Range(-250f, 250f), Random.Range(-150f, 150f), 0);
+            Vector3 position = new Vector3(Random.Range(-80f, 80f), Random.Range(-40f, 40f), 0);
             Quaternion rotation = Quaternion.Euler(180f, 0, Random.Range(0f, 360f));
             Vector3 direction;
 
             // **Lấy hướng phía trước dựa trên rotation**
-            if (Mathf.Abs(rotation.z) > 90 && Mathf.Abs(rotation.z) < 270f)
+            if (Mathf.Abs(rotation.z) > 120 && Mathf.Abs(rotation.z) < 300f)
                 direction = rotation * Vector3.left; // Lấy trục Y làm hướng phía trước
             else
                 direction = rotation * Vector3.right; // Lấy trục Y làm hướng phía trước
@@ -67,17 +71,24 @@ public class SpawnBoid : MonoBehaviour
             Matrix4x4 matrix = Matrix4x4.TRS(position, rotation, Vector3.one);
 
             // Lưu trữ dữ liệu boid
-            BoidGPUVariable boidData = new BoidGPUVariable
+            BoidGPUTransform boidData_1 = new BoidGPUTransform
             {
                 matrix = matrix,
                 direction = direction,
-                boidMaterial = boidMaterial,
-                boidMesh = boidMesh,
-                propertyBlock = propertyBlock
             };
 
-            boids.boidVariable.Add(boidData);
+            boids.boidTransform.Add(boidData_1);
         }
+
+        // Lưu trữ dữ liệu boid
+        BoidGPUMaterial boidData_2 = new BoidGPUMaterial
+        {
+            boidMaterial = boidMaterial,
+            boidMesh = boidMesh,
+            propertyBlock = propertyBlock
+        };
+
+        boids.boidMaterial.Add(boidData_2);
 
         // Thiết lập camera (nếu cần)
         //SetupCamera();
@@ -118,9 +129,9 @@ public class SpawnBoid : MonoBehaviour
         vertices[2] = new Vector3(0f, 0.5f, 0f);
 
         Vector2[] uv = new Vector2[3];
-        uv[0] = new Vector2(-1f, 0f);
-        uv[1] = new Vector2(1f, 0f);
-        uv[2] = new Vector2(1f, 2f);
+        uv[0] = new Vector2(-0.75f, 0f);
+        uv[1] = new Vector2(1.25f, 0f);
+        uv[2] = new Vector2(1f, 1.5f);
 
         int[] triangles = new int[3];
         triangles[0] = 0;
