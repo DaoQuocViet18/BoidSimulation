@@ -72,11 +72,14 @@ public unsafe partial struct NativeQuadTree<T> : IDisposable where T : unmanaged
         var depthExtentsScaling = LookupTables.DepthLookup[maxDepth] / bounds.extents;
         for (int i = 0; i < incomingElements.Length; i++)
         {
+            //Debug.Log("incomingElements[i].position: " + incomingElements[i].position);
             var positionElement = incomingElements[i].position;
             positionElement -= bounds.center;
             positionElement.y = -positionElement.y;
             var position = (positionElement + bounds.extents) * .5f;
             position *= depthExtentsScaling;
+            //Debug.Log("(int)position.x: " + (int)position.x);
+            //Debug.Log("(int)position.y: " + (int)position.y);
             mortonCodes[i] = LookupTables.MortonLookup[(int)position.x] | (LookupTables.MortonLookup[(int)position.y] << 1);
 
             int atIndex = 0;

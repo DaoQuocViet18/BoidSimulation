@@ -9,8 +9,8 @@
     {
         Tags { "RenderType"="Transparent" "Queue"="Transparent" }
         Blend SrcAlpha OneMinusSrcAlpha // Kích hoạt Alpha Blending
-        ZWrite Off // Tắt ZWrite để tránh che các object phía sau
-
+        // ZWrite Off // Tắt ZWrite để tránh che các object phía sau
+        Cull Off  // Tắt culling để hiển thị cả hai mặt
         Pass
         {
             ZWrite On // Bật z-write
